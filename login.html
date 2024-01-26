@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website using html,css and javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+
+</head>
+
+<body>
+
+    <div class=" container1">
+        <navbar class="navbar">
+            <div id="mainlogo"><a href="index.html"><img src="images/logo.png" width="140px"></a></div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cartsinfo.html"><img src="images/cart.png" alt="" width="30px" height="30px"></a>
+        </navbar>
+    </div>
+
+
+
+
+    <div class="form-container">
+        <div class="container">
+            <div class="row4">
+                <div class="column7">
+                    <img src="images/image1.png" alt="">
+                </div>
+                <div class="column6">
+
+                    <div class="forms-details">
+
+                        <div class="form-btn">
+                            <span id="loginbutton" onclick="login()">Login</span>
+                            <span id="registerbutton" onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="login-form">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <button type="submit" id="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="registration-form">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="password">
+                            <button type="submit" id="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Andriod and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-column2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose is to sustainably Make the Pleasure and Benefits of Sports Accessible to the Many
+                    </p>
+                </div>
+                <div class="footer-column3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-column4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Easy Tutorial </p>
+        </div>
+    </div>
+    <script>
+        var loginform = document.getElementById("login-form");
+        var registrationform = document.getElementById("registration-form");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registrationform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)"
+            indicator.style.transform = "translateX(7px)"
+        }
+        function login() {
+            registrationform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(-107px)"
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
